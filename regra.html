@@ -1,0 +1,132 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<head>
+  <title>Fluminense</title>
+  <style>
+  @import url('https://fonts.googleapis.com/css2?family=Arvo&family=Bebas+Neue&family=Josefin+Sans&family=Playfair+Display&display=swap');
+  
+  
+  h1{text-align:center;
+  font-size:70px;
+  font-family: 'Arvo', serif;font-family: 'Bebas Neue', sans-serif;font-family: 'Josefin Sans', sans-serif;font-family: 'Playfair Display', serif;
+  }
+  h2{
+    font-family: 'Arvo', serif;font-family: 'Bebas Neue', sans-serif;font-family: 'Josefin Sans', sans-serif;font-family: 'Playfair Display', serif;
+  }
+  
+   *{
+     padding:2px;
+     margin:2px;
+   }
+    body{
+      width: 100%
+      height: 100vh;
+      
+  .carro{
+    font-size: 20px;
+      position: relative;
+     
+     
+      top:300px;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      background: whitesmoke;
+      border-radius: 10px;
+      padding:60px;
+      width: min-content;
+      align-items: center ;
+      color: black ;
+    }
+   .button{
+      font-family:'Poppins',sans-serif;
+      background: blue;
+      width: 100%;
+      height:40px;
+      border: none;
+      font-size: 1.2em;
+      color:white ;
+      border-radius:20px;
+      outline: none;
+    }
+    
+    .oi{
+      min-width:280px;
+      border-radius: 22px;
+      border:2px gray solid;
+      padding: 5px ;
+      margin: 0px 0px 12px -5px;
+      
+    }
+  </style>
+  
+  <script>
+    function regraDeTres(valor1, valor2, valor3) {
+      // Calcula o valor proporcional a partir dos três valores fornecidos
+      return (valor3 * valor2) / valor1;
+    }
+
+    function calcular() {
+      var valor1 = parseInt(document.getElementById("valor1").value);
+      var valor2 = parseInt(document.getElementById("valor2").value);
+      var valor3 = parseInt(document.getElementById("valor3").value);
+
+      var resultado = regraDeTres(valor1, valor2, valor3);
+      document.getElementById("resultado").textContent = "Resultado: " + resultado;
+    }
+  </script>
+</head>
+<body>
+  <h1>Regra de 3</h1>
+  <br>  <br>  <br>  <br>  <br>  <br>  <br>
+  <h2>A regra de três é uma técnica usada para encontrar uma medida quando conhecemos outras três, desde que essas quatro medidas formem uma proporção. Esse método, conhecido como regra de três, faz uso de alguns conhecimentos importantes: propriedade fundamental das proporções, grandezas e medidas, razões e proporções. Pode-se dizer que a união de todos esses conhecimentos resulta, entre outras coisas, no que conhecemos como regra de três.</h2>
+  <br>
+  <
+  <br>
+  <h2>Digamos que uma fábrica de brinquedos consiga produzir 500 peças diárias com apenas 12 funcionários. Quantos funcionários são necessários para produzir 750 peças diárias?</h2>
+  
+  <h2>Para resolver esse tipo de problema, usamos regra de três. Note que existem duas grandezas proporcionais no problema, uma é a quantidade de funcionários e outra a quantidade de peças diárias. Perceba também que são conhecidas três medidas dessas grandezas e a outra queremos descobrir. É por isso que essa técnica é conhecida como regra de três.</h2>
+  <br><br>
+<h2>Construindo a proporção relativa a esse problema, temos:</h2>
+  <br>
+
+<h2>12 = x
+500 750</h2>
+  <br>
+
+<h2>Para encontrar o valor de x, basta utilizar os conhecimentos provenientes das equações ou usar a propriedade fundamental das proporções: o produto dos extremos é igual ao produto dos meios. Essa propriedade também é conhecida como “multiplicação cruzada”. basta multiplicar 500 por x e 12 por 750:</h2>
+
+<h2>500x = 12·750</h2>
+  <br>  <br>  
+<h2>Resolvendo essa equação, temos: </h2> <br>
+
+<h2>500x = 9000</h2>
+
+<h2>x = 9000
+500
+
+x = 18</h2>
+  <br>  <br>  
+
+<h2>Serão necessários 18 funcionários para produzir 750 brinquedos por dia.</h2>
+  <br>
+  <div class="carro">
+    <h4>Calculadora</h4><br>
+  <label for="valor1">Valor:</label><br>
+  <input class="oi" type="number" id="valor1">
+<br>
+  <label for="valor2">Valor:</label><br>
+  <input class="oi" type="number" id="valor2">
+<br>
+  <label for="valor3">Valor:</label><br>
+  <input class="oi" type="number" id="valor3">
+<br>
+  <button  class="button" onclick="calcular()">Calcular</button>
+
+  <div id="resultado"></div>
+    
+  </div>
+</body>
+</html>
